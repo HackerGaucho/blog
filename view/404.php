@@ -5,14 +5,8 @@
         ?>
     </div>
     <div class="g6">
-        <b>Entrar</b>
-        <form class="" action="/signin.php" method="post">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" value="">
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password" value="">
-            <button type="submit" name="button">Entrar</button>
-        </form>
+        <h2>Erro 404</h2>
+        <p>Página não encontrada</p>
     </div>
     <div class="g3">
         <?php

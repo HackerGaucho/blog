@@ -12,8 +12,7 @@ if(isset($arr[1])){
     $controller=$arr[1];
     $rotas=[
         'feed',
-        'post',
-        'signin'
+        'post'
     ];
     $filename='../controller/'.$controller.'/'.$method.'.php';
     if(in_array($controller,$rotas) && file_exists($filename)){
@@ -21,6 +20,7 @@ if(isset($arr[1])){
     }else{
         header('HTTP/1.0 404 Not Found');
         $title='Página não encontrada';
+        require '../view/header.php';
         require '../view/404.php';
         exit();
     }
