@@ -10,14 +10,16 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 }
 if(isset($arr[1])){
     $controller=$arr[1];
-    switch ($controller) {
-        case 'signin':
-            require '../controller/'.$controller.'/'.$method.'.php';
-            break;
-        default:
-            require '../view/404.php';
-            exit();
-            break;
+    $rotas=[
+        'post',
+        'signin'
+    ];
+    $filename='../controller/'.$controller.'/'.$method.'.php';
+    if(in_array($controller,$rotas) && file_exists($filename)){
+        require $filename;
+    }else{
+        require '../view/404.php';
+        exit();
     }
 }else{
     $title='Hacker Gaucho';

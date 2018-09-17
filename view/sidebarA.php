@@ -1,8 +1,8 @@
 <?php
 $links=[
     '/'=>'Página principal',
-    '/signin.php'=>'Entrar',
-    '/postCreate.php'=>'Criar novo post'
+    '/signin'=>'Entrar',
+    '/post'=>'Criar novo post'
 ];
 $uri=$_SERVER['REQUEST_URI'];
 print '<b>Menu</b>';
