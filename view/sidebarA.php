@@ -1,7 +1,6 @@
 <?php
 $links=[
     '/'=>'Página principal',
-    '/signin'=>'Entrar',
     '/post'=>'Criar novo post'
 ];
 $uri=$_SERVER['REQUEST_URI'];
