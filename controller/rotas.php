@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $str=$_SERVER["REQUEST_URI"];
 $arr=explode('?',$str);
 $arr=explode('/',$arr[0]);
