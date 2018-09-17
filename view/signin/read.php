@@ -1,7 +1,7 @@
 <div class="r">
     <div class="g3">
         <?php
-        require 'sidebarEsquerda.php';
+        require '../view/sidebarA.php';
         ?>
     </div>
     <div class="g6">
@@ -16,7 +16,7 @@
     </div>
     <div class="g3">
         <?php
-        require 'sidebarDireita.php';
+        require '../view/sidebarB.php';
         ?>
     </div>
 </div>

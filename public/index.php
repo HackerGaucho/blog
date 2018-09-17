@@ -1,5 +1,5 @@
 <?php
 $title='Hacker Gaucho';
-require '../header.php';
-require '../homeGet.php';
+require '../view/header.php';
+require '../view/home/read.php';
 ?>

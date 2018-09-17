@@ -2,8 +2,8 @@
 $title='Criar novo post';
 require '../header.php';
 if($_SERVER['REQUEST_METHOD']=='GET'){
-    require '../novoPostGet.php';
+    require '../view/post/create.php';
 }else{
-    require '../novoPostPost.php';
+    require '../controller/post/create.php';
 }
 ?>
